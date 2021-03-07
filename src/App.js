@@ -1,4 +1,3 @@
-import "./App.css";
 import { useRef, useState } from "react";
 import CountryCodeDropdown from "./CountryCode/CountryCodePicker";
 
@@ -17,7 +16,7 @@ function App(props) {
       <CountryCodeDropdown
         value={value? value: countryCode}
         onChange={onChange? onChange: changeCountryCode}
-        flag={false}
+        flag={true}
         dropdownClass={dropdownClass}
         fullCompClass={fullCompClass}
       />
