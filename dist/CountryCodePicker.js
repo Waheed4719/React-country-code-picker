@@ -16,7 +16,7 @@ var _Countries = require("./Countries.json");
 
 var _Countries2 = _interopRequireDefault(_Countries);
 
-require("./App.css");
+require("./countryCodePicker.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

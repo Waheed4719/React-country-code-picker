@@ -1,9 +1,13 @@
 {
-  "name": "@dmc4719/country-code-picker",
-  "version": "1.0.8",
+  "name": "react-country-code-picker",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Waheed4719/React-country-code-picker.git"
+  },
   "babel": {
     "presets": [
       "react",
