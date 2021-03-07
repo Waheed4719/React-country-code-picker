@@ -1,0 +1,103 @@
+.countryCodeComponent {
+  width: 250px;
+  max-width: 250px;
+  margin: auto;
+  position: relative;
+  height: 35px;
+  padding: 0;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.countryCodeComponent.flagged {
+  padding-left: 40px;
+}
+.countryCodeComponent:not(.empty):not(.flagged) input {
+  padding-left: 20px;
+}
+
+.countryDrop {
+  max-height: 200px;
+  overflow: auto;
+  width: 100%;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.countryDrop ul {
+  list-style: none;
+  margin: 0px;
+  width: 100%;
+  overflow: auto;
+  padding: 0px;
+}
+
+.countryDrop ul li {
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.countryDrop ul li img {
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+.countryDrop ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.countryDrop::-webkit-scrollbar,
+.countryDrop::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: gainsboro;
+}
+
+.countryDrop::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+.countryCodeComponent .selectedFlag {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0px);
+  width: auto;
+  bottom: auto;
+  height: 90%;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+}
+.countryCodeComponent input {
+  outline: none;
+  padding: 5px 15px;
+  margin: 0;
+  border: none;
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+}
+.countryCodeComponent i.plus-icon {
+  display: block;
+  position: absolute;
+  font-family: sans-serif;
+  color: black;
+  font-size: 15px;
+}
+.countryCodeComponent.flagged:not(.empty) i.plus-icon {
+  /* content:"+"; */
+  right: auto;
+  left: 45px;
+}
+
+.countryCodeComponent:not(.flagged):not(.empty) i.plus-icon {
+  left: 10px;
+}

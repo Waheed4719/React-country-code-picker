@@ -1,0 +1,50 @@
+{
+  "name": "@dmc4719/country-code-picker",
+  "version": "1.0.8",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "SET NODE_ENV=production && rd /s /q dist && mkdir dist && npx babel src/CountryCode --out-dir dist --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
